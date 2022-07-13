@@ -1,0 +1,5 @@
+LANDING_STATUS = IF(SELECTEDVALUE(LoadStatusLog[LANDING]) = "SUCCEEDED",0,
+                        IF(SELECTEDVALUE(LoadStatusLog[LANDING]) = "QUEUED",1,
+                        IF(SELECTEDVALUE(LoadStatusLog[LANDING]) = "IN_PROGRESS",2,
+                        IF(SELECTEDVALUE(LoadStatusLog[LANDING]) = "FAILED",3
+                        ))))
